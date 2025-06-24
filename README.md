@@ -13,7 +13,6 @@ A simple, responsive inventory management system designed for individual shopkee
 - 📊 View recent transactions in a clean table format
 - 🧠 Automatically saves and loads your data per device
 - 🔄 Data stays safe even after refresh or shutdown
-- 🎯 100% works offline — perfect for everyday use
 
 ---
 
