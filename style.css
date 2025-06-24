@@ -1,0 +1,51 @@
+body {
+  font-family: Arial;
+  text-align: center;
+  background: #f0f8ff;
+  padding: 20px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.menu-box {
+  background: #4da6ff;
+  color: white;
+  padding: 15px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.menu-box:hover {
+  background: #007acc;
+}
+
+.section {
+  display: none;
+  margin-top: 20px;
+}
+
+input, select, button {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+table {
+  margin: 10px auto;
+  border-collapse: collapse;
+  width: 90%;
+}
+
+table, th, td {
+  border: 1px solid #999;
+  padding: 10px;
+}
