@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Inventory</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Smart Inventory</h1>
+
+  <div id="mainMenu" class="menu">
+    <a href="#" onclick="showSection('addItem')" class="menu-box">Add Item</a>
+    <a href="#" onclick="showSection('customerMode')" class="menu-box">Customer Mode</a>
+    <a href="#" onclick="showSection('alerts')" class="menu-box">Alerts</a>
+    <a href="#" onclick="showSection('inventory')" class="menu-box">Current Inventory</a>
+    <a href="#" onclick="showSection('transactions')" class="menu-box">Transactions</a>
+  </div>
+
+  <div id="addItem" class="section">
+    <h2>Add Item</h2>
+    <input id="itemName" placeholder="Item name">
+    <input id="itemQty" placeholder="Quantity (kg)" type="number">
+    <input id="itemPrice" placeholder="Price (₹/kg)" type="number">
+    <button onclick="addItem()">Save</button>
+    <button onclick="goHome()">Back to Home</button>
+  </div>
+
+  <div id="customerMode" class="section">
+    <h2>Customer Mode</h2>
+    <select id="purchaseItem"></select>
+    <input id="purchaseQty" type="number" placeholder="Quantity to buy (kg)">
+    <button onclick="purchase()">Buy</button>
+    <button onclick="goHome()">Back to Home</button>
+  </div>
+
+  <div id="alerts" class="section">
+    <h2>Low Stock Alerts</h2>
+    <ul id="alertList"></ul>
+    <button onclick="goHome()">Back to Home</button>
+  </div>
+
+  <div id="inventory" class="section">
+    <h2>Current Inventory</h2>
+    <table id="inventoryTable"></table>
+    <button onclick="goHome()">Back to Home</button>
+  </div>
+
+  <div id="transactions" class="section">
+    <h2>Recent Transactions</h2>
+    <table id="transactionTable"></table>
+    <button onclick="goHome()">Back to Home</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
